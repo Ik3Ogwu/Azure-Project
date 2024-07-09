@@ -6,6 +6,8 @@
 Tool: Azure DevOps 
 Use Case: Implement two separate pipelines one for infrastructure changes and another for the application code.
 
+[Blank diagram - Page 1.pdf](https://github.com/user-attachments/files/16135710/Blank.diagram.-.Page.1.pdf)
+
 Pipeline 1: Infrastructure Pipeline
 This pipeline manages changes to the Terraform-defined infrastructure.
 Steps:
