@@ -23,6 +23,9 @@ Apply Terraform Changes: If approved, run terraform apply to make the actual cha
 8. Output Variables: Capture and store any output variables from Terraform for use in other pipelines or processes.
 
 Pipeline 2: Application Pipeline
+
+![Flowchart - Page 1](https://github.com/Ik3Ogwu/Azure-Project/assets/161030400/c0d56698-637f-49d0-bebe-c8de71a28bd7)
+
 This pipeline handles the F1 results Python application.
 Steps:
 1. Trigger: Set to run on changes to the F1QualiResults.py file or config.ini in the main branch.
