@@ -1,8 +1,10 @@
 # Azure-Project
 
-# Azure-Project Design
+# Infrastructure Setup using IaC
+
 [Terraform Configuration](main.tf)
-Provisioned Resources
+
+Provisioned Resources:
 1. Azure Resource Group: A resource group to logically group all the resources for this project
 2. Azure Storage Account: A place to store files
 3. Azure Storage Container: Within the storage account, we create a container named "results" to store the Excel files
