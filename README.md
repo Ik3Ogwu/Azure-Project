@@ -24,7 +24,7 @@ Apply Terraform Changes: If approved, run terraform apply to make the actual cha
 
 Pipeline 2: Application Pipeline
 
-![Flowchart - Page 1](https://github.com/Ik3Ogwu/Azure-Project/assets/161030400/c0d56698-637f-49d0-bebe-c8de71a28bd7)
+![Flowchart - Page 1 (1)](https://github.com/Ik3Ogwu/Azure-Project/assets/161030400/93329b28-dcc5-492e-a111-e67955cf4781)
 
 This pipeline handles the F1 results Python application.
 Steps:
@@ -37,20 +37,9 @@ Steps:
 7. Post-Deployment Tests: Run smoke tests to ensure the deployment was successful.
 
 
-Describe a CI/CD pipeline strategy that encompasses both infrastructure and application code changes. Detail the steps involved from code commit to deployment, specifying:
-How infrastructure changes are tested and applied.
-How application code, including the provided Python script, is built, tested, and deployed to the containerized environment.
-
-
-
 # Monitoring and Security Tools:
-Monitoring and Security Tools
-Azure Monitor: Enable for your AKS cluster and storage account
-Azure Security Center: Enable for your subscription
-Azure Key Vault: Store secrets and access keys
+For monitoring, I would use Azure Monitor to track the performance of the AKS cluster and storage account. This tool collects metrics and logs, allowing us to set up alerts for critical issues concerning the infrastructure's health.
+
+To ensure security, I would implement Azure Security Center for threat protection and Azure Key Vault to securely store sensitive information like API keys. Additionally, I'd use Network Security Groups to control traffic and implement container image scanning to check for vulnerabilities before deployment.
 
 
-
-
-Specify what tools and practices you would implement for monitoring the performance and health of the infrastructure.
-Describe the security measures and tools you would use to ensure the integrity and security of the storage, message queue, and containerization infrastructure.
