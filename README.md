@@ -42,4 +42,8 @@ For monitoring, I would use Azure Monitor to track the performance of the AKS cl
 
 To ensure security, I would implement Azure Security Center for threat protection and Azure Key Vault to securely store sensitive information like API keys. Additionally, I'd use Network Security Groups to control traffic and implement container image scanning to check for vulnerabilities before deployment.
 
+# Python Script in Container:
+<img width="662" alt="Screen Shot 2024-07-09 at 11 39 03 PM" src="https://github.com/Ik3Ogwu/Azure-Project/assets/161030400/94caf628-f3c7-4ac8-890c-c96039bf3efe">
+
+
 
