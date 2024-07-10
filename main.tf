@@ -28,10 +28,10 @@ resource "azurerm_storage_account" "storage" {
 }
 
 # Create a storage container
-resource "azurerm_storage_container" "container" {
-  name                  = "results"
+resource "azurerm_storage_container" "excel_container" {
+  name                  = "f1-quali-results"
   storage_account_name  = azurerm_storage_account.storage.name
-  container_access_type = "private"
+  container_access_type = "blob"
 }
 
 # Create a storage queue
