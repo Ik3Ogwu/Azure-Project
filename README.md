@@ -1,4 +1,4 @@
-# Azure-Project
+# Infra-Project
 
 # Infrastructure Setup using IaC
 
