@@ -2,8 +2,13 @@
 
 # Azure-Project Design
 [Terraform Configuration](main.tf)
+Provisioned Resources
+1. Azure Resource Group: A resource group to logically group all the resources for this project
+2. Azure Storage Account: A place to store files
+3. Azure Storage Container: Within the storage account, we create a container named "results" to store the Excel files
+4. Azure Storage Queue: a queue is provisioned for message passing or task scheduling.
+5. Azure Kubernetes Service (AKS): To run the Python script in a containerized environment and allow for scalability
 
-Provisoned resources:
 
 # CI/CD Strategy:
 Tool: Azure DevOps 
