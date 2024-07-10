@@ -7,18 +7,20 @@ Tool: Azure DevOps
 Use Case: Implement two separate pipelines one for infrastructure changes and another for the application code.
 
 Pipeline 1: Infrastructure Pipeline
+
+![Blank diagram - Page 1](https://github.com/Ik3Ogwu/Azure-Project/assets/161030400/a3c7a847-5a18-4c50-86e1-bcbd34ec6b0c)
+
 This pipeline manages changes to the Terraform-defined infrastructure.
 Steps:
 1. Trigger: Set up to run on changes to the main.tf file in the main branch.
 2. Checkout Code: Fetch the latest code from the repository.
-3. Install Terraform: Use the "TerraformInstaller" task to install the specified Terraform version.
-4. Initialize Terraform: Run terraform init to initialize the working directory.
-5. Validate Terraform: Run terraform validate to check for syntax errors and internal consistency.
-6. Plan Terraform Changes: Execute terraform plan to create an execution plan. This step shows what changes will be made to the infrastructure.
-7. Publish Plan: Save the plan as an artifact for review.
-8. Approval Gate: Implement a manual approval process for reviewing the plan before applying changes.
+3. Initialize Terraform: Run "terraform init" to initialize the working directory.
+4. Validate Terraform: Run "terraform validate" to check for syntax errors and internal consistency.
+5. Plan Terraform Changes: Execute "terraform plan -out=tfplan" to create an execution plan. This step shows what changes will be made to the infrastructure.
+6. Publish Plan: Run "terraform show -no-color tfplan > tfplan.txt" to save the plan as an artifact for review.
+7. Approval Gate: Implement a manual approval process for reviewing the plan before applying changes.
 Apply Terraform Changes: If approved, run terraform apply to make the actual changes to the infrastructure.
-9. Output Variables: Capture and store any output variables from Terraform for use in other pipelines or processes.
+8. Output Variables: Capture and store any output variables from Terraform for use in other pipelines or processes.
 
 Pipeline 2: Application Pipeline
 This pipeline handles the F1 results Python application.
