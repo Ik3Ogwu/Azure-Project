@@ -39,7 +39,7 @@ Pipeline 2: Application Pipeline
 This pipeline handles the F1 results Python application.
 Steps:
 1. Trigger: Set to run on changes to the F1QualiResults.py file or config.ini in the main branch.
-2. Checkout Code: Fetch the latest application code/review docker file.
+2. Checkout Code: Fetch the latest application code/review [Docker File](Dockerfile).
 3. Build Docker Image: Use the "docker build -t f1qualiresults:latest . " to build an image of the F1 results application.
 4. Run Tests: Execute any unit or integration tests for the Python script.
 5. Push Docker Image: If tests pass, use "docker run f1qualiresults:latest" to push the Docker image to Azure Container Registry.
