@@ -1,6 +1,9 @@
 # Azure-Project
 
 # Azure-Project Design
+[Terraform Configuration](main.tf)
+
+Provisoned resources:
 
 # CI/CD Strategy:
 Tool: Azure DevOps 
@@ -29,13 +32,12 @@ Pipeline 2: Application Pipeline
 This pipeline handles the F1 results Python application.
 Steps:
 1. Trigger: Set to run on changes to the F1QualiResults.py file or config.ini in the main branch.
-2. Checkout Code: Fetch the latest application code.
-3. Build Docker Image: Use the Docker task to build an image of the F1 results application.
+2. Checkout Code: Fetch the latest application code/review docker file.
+3. Build Docker Image: Use the "docker build -t f1qualiresults:latest . " to build an image of the F1 results application.
 4. Run Tests: Execute any unit or integration tests for the Python script.
-5. Push Docker Image: If tests pass, push the Docker image to Azure Container Registry.
+5. Push Docker Image: If tests pass, use "docker run f1qualiresults:latest" to push the Docker image to Azure Container Registry.
 6. Deploy to AKS: Use Kubernetes manifests to deploy the new image to the AKS cluster.
 7. Post-Deployment Tests: Run smoke tests to ensure the deployment was successful.
-
 
 # Monitoring and Security Tools:
 For monitoring, I would use Azure Monitor to track the performance of the AKS cluster and storage account. This tool collects metrics and logs, allowing us to set up alerts for critical issues concerning the infrastructure's health.
