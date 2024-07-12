@@ -18,7 +18,7 @@ Use Case: Implement two separate pipelines one for infrastructure changes and an
 
 Pipeline 1: Infrastructure Pipeline
 
-![Blank diagram - Page 1](https://github.com/Ik3Ogwu/Azure-Project/assets/161030400/a3c7a847-5a18-4c50-86e1-bcbd34ec6b0c)
+![Blank diagram - Page 1 (1)](https://github.com/user-attachments/assets/02cf4701-0f9e-4406-b944-32562006a626)
 
 This pipeline manages changes to the Terraform-defined infrastructure.
 Steps:
